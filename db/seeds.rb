@@ -15,12 +15,12 @@ cd = User.create( :username => 'charlesd', :password => 'x', :password_confirmat
 jh = User.create( :username => 'josephheller', :password => 'x', :password_confirmation => 'x')
 
 tweet1 = Tweet.create( :content => 'Many years later, as he faced the firing squad, Colonel #Aureliano Buendia was to remember that distant afternoon when his father took him to discover ice. ')
-tweet2 = Tweet.create( :content => 'It was #thebestoftimes, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair. ')
-tweet3 = Tweet.create( :content => 'It was love #atfirstsight. ')
+tweet2 = Tweet.create( :content => 'It was #thebestof times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair. ')
+tweet3 = Tweet.create( :content => 'It was love #atfirst sight. ')
 
 hashtag1 = Hashtag.create( :name => '#aureliano' )
-hashtag2 = Hashtag.create( :name => '#thebestoftimes' )
-hashtag3 = Hashtag.create( :name => '#atfirstsight' )
+hashtag2 = Hashtag.create( :name => '#thebestof' )
+hashtag3 = Hashtag.create( :name => '#atfirst' )
 
 hashtag1.tweets << tweet1
 hashtag2.tweets << tweet2
