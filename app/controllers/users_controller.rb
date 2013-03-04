@@ -28,7 +28,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = @auth
+    @user = User.find(params[:id])
   end
 
 end
