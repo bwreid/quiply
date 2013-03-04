@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>TwitterClone</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+  <!-- Header and Nav -->
+  <%= render :partial => 'layouts/nav' %>
+  <!-- End Header and Nav -->
+
+  <% if flash[:notice].present? %>
+    <div class='row'>
+      <div class='twelve centered columns alert-box secondary'><%= flash[:notice] %></div>
+    </div>
+  <% end %>
+
+  <div class='splash'>
+    <div class='row'>
+      <div class='twelve columns'>
+        <h1>Quiply is content collaboration, rewritten.</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row explainer">
+    <div class="four columns">
+      <h4>How does it work?</h4>
+    </div>
+    <div class="eight columns">
+      <p>Lorem ipsum consectetur in cillum irure nulla id do officia enim mollit aliqua cupidatat velit ea dolor irure proident in proident proident adipisicing aute laborum veniam tempor dolor velit et commodo elit officia. </p>
+    </div>
+  </div>
+
+  <div class="row splash-row">
+    <div class="twelve columns">
+      <p class="splash-p">This is a <span>Quip!</span> It's the beginning of a story, thought, idea, manifesto... The original poster only has only <span>255</span> character to start their Quip, and then it's on to someone else. Or many someones!</p>
+      <div class="panel tweet">
+            <i class="foundicon-up-arrow right"></i>
+            <i class="foundicon-plus right"></i>
+            <i class="foundicon-down-arrow right"></i>
+          <p>
+            <span>
+            Once upon a time, in a land far far away, Quip Bot was making an awesome <a href="#">#quip</a>. Words with a # sign in front of them are a way to link Quips together by similar topics, making them easier to find if you're not contributing yourself.
+            </span>
+          </p>
+          <label><a href="#">quipbot</a></label>
+        </div>
+      </div>
+    </div>
+
+  <div class="row explainer">
+    <div class="four columns">
+      <h4>What do I do now?</h4>
+    </div>
+    <div class="eight columns">
+      <p>Lorem ipsum consectetur in cillum irure nulla id do officia enim mollit aliqua cupidatat velit ea dolor irure proident in proident proident adipisicing aute laborum veniam tempor dolor velit et commodo elit officia. Lorem ipsum cillum in est labore amet sit voluptate est cupidatat irure tempor aute deserunt veniam Excepteur proident id amet irure anim in.  </p>
+    </div>
+  </div>
+
+  <div class="row splash-row">
+    <div class="twelve columns">
+      <p class="splash-p">This is a <span>Quip!</span> It's the beginning of a story, thought, idea, manifesto... The original poster only has only <span>255</span> character to start their Quip, and then it's on to someone else. Or many someones!</p>
+      <div class="panel tweet">
+            <i class="foundicon-up-arrow right"></i>
+            <i class="foundicon-plus right"></i>
+            <i class="foundicon-down-arrow right"></i>
+          <p>
+            <span>
+            Once upon a time, in a land far far away, Quip Bot was making an awesome <a href="#">#quip</a>. Words with a # sign in front of them are a way to link Quips together by similar topics, making them easier to find if you're not contributing yourself. You can add 255 characters to keep it going. If the author (or others!) like your additions, they can keep going with it until infinity!
+            </span>
+          </p>
+          <label><a href="#">quoteHUMANunquote</a></label>
+        </div>
+      </div>
+    </div>
+
+  <div class="row explainer">
+    <div class="four columns">
+      <h4>That's it?</h4>
+    </div>
+    <div class="eight columns">
+      <p>Cupidatat velit ea dolor irure proident in proident proident adipisicing aute laborum veniam tempor dolor velit et commodo elit officia. Lorem ipsum cillum in est labore amet sit voluptate est cupidatat irure tempor aute deserunt veniam Excepteur proident id amet irure anim in.  </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns panel">
+      <p>Lorem ipsum consectetur in cillum irure nulla id do officia enim mollit aliqua cupidatat velit ea dolor irure proident in proident proident adipisicing aute laborum veniam tempor dolor velit et commodo elit officia. Lorem ipsum cillum in est labore amet sit voluptate est cupidatat irure tempor aute deserunt veniam Excepteur proident id amet irure anim in.</p>
+      <p>Lorem ipsum aute officia dolore officia aute in dolore incididunt elit esse et in aliquip commodo ullamco incididunt deserunt nisi exercitation est commodo consequat aute incididunt sunt velit anim Excepteur labore in dolor in esse est incididunt nisi nulla ut dolore fugiat sit veniam in veniam elit Excepteur nulla ut sed veniam consectetur adipisicing amet ullamco ut irure Ut sed est Excepteur id est Duis culpa ad in eiusmod incididunt Excepteur voluptate qui elit qui dolore magna tempor mollit est dolore sunt mollit amet et in.</p>
+      <p>laborum aliqua eiusmod non nisi exercitation enim Excepteur tempor ex sint ea dolor Excepteur Duis minim in sint culpa ad aute labore in sed enim commodo do sunt aliquip ea eiusmod incididunt qui dolor ut proident dolor laborum dolore et proident sed culpa amet eu velit ea et ullamco sunt commodo commodo dolore id anim dolor non deserunt laboris dolore amet et consectetur amet Excepteur officia fugiat mollit aliquip in eiusmod officia officia ea mollit nisi est sunt do commodo ullamco pariatur magna ut culpa consectetur nostrud veniam dolore fugiat consequat non officia culpa irure adipisicing cillum consequat cillum Ut qui do consequat in aute irure laboris anim officia laboris nostrud enim velit esse sed anim eiusmod eiusmod dolore do. </p>
+    </div>
+  </div>
+  <!-- Footer -->
+
+  <%= render :partial => 'layouts/footer' %>
+
+</body>
+</html>

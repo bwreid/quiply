@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700);
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: bold;
+}
+
+p, a {
+  font-family: 'Gentium Book Basic', serif;
+}
+
+.panel {
+  background: #FFF;
+  border-top: 1px solid #eee;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  i {
+    font-size: 1.2em;
+    padding: 3px;
+  }
+}
+
+.splash {
+  width: 100%;
+  background: rgb(3,141,204); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(3,141,204,1) 0%, rgba(0,123,175,1) 57%, rgba(11,127,178,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(3,141,204,1)), color-stop(57%,rgba(0,123,175,1)), color-stop(100%,rgba(11,127,178,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(3,141,204,1) 0%,rgba(0,123,175,1) 57%,rgba(11,127,178,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(3,141,204,1) 0%,rgba(0,123,175,1) 57%,rgba(11,127,178,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(3,141,204,1) 0%,rgba(0,123,175,1) 57%,rgba(11,127,178,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(3,141,204,1) 0%,rgba(0,123,175,1) 57%,rgba(11,127,178,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#038dcc', endColorstr='#0b7fb2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  text-align: center;
+  border-bottom: 1px solid #222;
+  box-shadow: inset 0px -1px 9px #222;
+  h1 {
+    color: #efefef;
+    padding: 100px 0;
+  }
+}
+
+.splash-p {
+  text-align: center;
+  color: #FFF;
+  span {
+    background-color: #FFF;
+    padding: 2px;
+    margin: 0 2px;
+    color: #038DCC;
+    font-weight: bold;
+  }
+}
+
+.splash-row {
+  padding-top: 20px;
+  background-color: #038DCC;
+  box-shadow: inset 0px 0px 9px #222;
+}
+
+.explainer {
+  padding: 50px 0;
+  h4 {
+    text-align: center;
+  }
+}

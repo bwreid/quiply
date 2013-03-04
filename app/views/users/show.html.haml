@@ -1,0 +1,6 @@
+%h2
+  = @user.username
+  = " - "
+  = link_to("Edit Account", edit_user_path(@user)) if @user = @auth
+  %h6 Your most recent contributions.
+  = render( :partial => 'shared/tweets', :locals => { :list => @user.tweets } )

@@ -1,0 +1,13 @@
+.row
+  .twelve.columns
+    %h2 Start your own Quip...
+    .panel.js_tweet
+      .story_build
+        %h6
+      = render :partial => 'shared/form'
+.row
+  .twelve.columns
+    %h2{ :style => 'text-align: right;'} ...or build on another!
+    .tweet_container
+      .tweet_list
+        = render( :partial => 'shared/tweets', :locals => { :list => @tweets } )

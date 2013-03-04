@@ -1,0 +1,5 @@
+.panel.js_tweet
+  %h6 Write Something New
+  = form_tag do
+    = text_area_tag 'tweet_content', nil, :rows => 2
+    = button_tag 'Post', :id => 'tweet_submit', :class => 'button secondary'

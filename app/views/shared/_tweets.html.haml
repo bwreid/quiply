@@ -1,0 +1,16 @@
+- list.each do |tweet|
+  .panel.tweet
+    - array = tweet.content.split.map do |x|
+      - x.include?("#") ? ("#{link_to( x, Hashtag.where( :name => x.downcase ).first )}") : ("#{x}")
+    - if tweet.user != @auth
+      %a{ :href => '#' }
+        %i{ :class => 'foundicon-up-arrow right' }
+      %a{ :href => '#' }
+        %i{ :class => 'foundicon-plus right' }
+      %a{ :href => '#' }
+        %i{ :class => 'foundicon-down-arrow right' }
+    %p
+      = "<span>".html_safe
+      = array.join(' ').gsub('*p*','<p></p>').html_safe
+      = "</span>".html_safe
+    %label= link_to(tweet.user.username, tweet.user)
